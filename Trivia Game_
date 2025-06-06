@@ -1,0 +1,255 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "deab557f-3809-4a59-8065-eb1f284fe5c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# list of questions\n",
+    "# store the anwers\n",
+    "# Ask the awestions \n",
+    "# see if they are correct\n",
+    "# keep track of the score \n",
+    "# tell the use the score \n",
+    "import random \n",
+    "\n",
+    "questions ={ \n",
+    "    \"What is the keyword to define a function in Python?\": \"def\",\n",
+    "    \"What is the keyword to define a function in Python?\": \"def\",\n",
+    "    \"What is the correct file extension for Python files?\": \".py\",\n",
+    "    \"Which symbol is used to comment in Python?\": \"#\"\n",
+    "    \"Which symbol is used to comment in Python?\": \"#\"\n",
+    "    \"What function is used to get input from the user?\": \"input\",\n",
+    "    \"How do you start a for loop in Python?\": \"for\",\n",
+    "    \"What is the output of 2 ** 3 in Python?\": \"8\",\n",
+    "    \"What keyword is used to import a module in Python?\": \"import\",\n",
+    "    \"What does the len() function return?\": \"length\",\n",
+    "    \"What is the result of 10 // 3 in Python?\": \"3\"\n",
+    "}\n",
+    "\n",
+    "def python_trivia_game():\n",
+    "   qustions_list = list(questions.key() )\n",
+    "    total_questions=5 \n",
+    "    scoir=0 \n",
+    "\n",
+    "    seleced_question = random.sample(questions_list, total_questions)\n",
+    "    print(selected_questions)\n",
+    "for idx, question in enumerate(selected_questions):\n",
+    "    print(f\" {idx + 1}. {question}\")\n",
+    "    user_answer = input(\"Your answer: \"). lower().strip()\n",
+    "    correct_answer = questions [question]\n",
+    "\n",
+    "    if user_answer == correct_answer. lower ():\n",
+    "        print \"Correct! \\n\")\n",
+    "        score += 1\n",
+    "    else:\n",
+    "print(f\"Wrong. The correct answer is: {correct_answer}.\\n\")\n",
+    "\n",
+    "python_trivia_game()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e49eb7d7-84d0-4342-a6a3-1dd32a704d4f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import random\n",
+    "\n",
+    "questions = { \n",
+    "    \"What is the keyword to define a function in Python?\": \"def\",\n",
+    "    \"What is the correct file extension for Python files?\": \".py\",\n",
+    "    \"Which symbol is used to comment in Python?\": \"#\",\n",
+    "    \"What function is used to get input from the user?\": \"input\",\n",
+    "    \"How do you start a for loop in Python?\": \"for\",\n",
+    "    \"What is the output of 2 ** 3 in Python?\": \"8\",\n",
+    "    \"What keyword is used to import a module in Python?\": \"import\",\n",
+    "    \"What does the len() function return?\": \"length\",\n",
+    "    \"What is the result of 10 // 3 in Python?\": \"3\"\n",
+    "}\n",
+    "\n",
+    "def python_trivia_game():\n",
+    "    question_list = list(questions.keys())\n",
+    "    total_questions = 5\n",
+    "    score = 0\n",
+    "\n",
+    "    selected_questions = random.sample(question_list, total_questions)\n",
+    "\n",
+    "    for idx, question in enumerate(selected_questions):\n",
+    "        print(f\"{idx + 1}. {question}\")\n",
+    "        user_answer = input(\"Your answer: \").lower().strip()\n",
+    "        correct_answer = questions[question]\n",
+    "\n",
+    "        if user_answer == correct_answer.lower():\n",
+    "            print(\"Correct!\\n\")\n",
+    "            score += 1\n",
+    "        else:\n",
+    "            print(f\"Wrong. The correct answer is: {correct_answer}\\n\")\n",
+    "\n",
+    "    print(f\"Game Over! Your final score is: {score}/{total_questions}\")\n",
+    "\n",
+    "# Run the game\n",
+    "python_trivia_game()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "86863823-49ff-4ba2-b2ae-dfdecafaaef0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "What is the keyword to define a function in Python?\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "def \n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Wrong. The correct answer is: def\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Ask the user a single Python trivia question\n",
+    "\n",
+    "question = \"What is the keyword to define a function in Python?\"\n",
+    "correct_answer = \"def\"\n",
+    "\n",
+    "print(question)\n",
+    "user_answer = input(\"def\").lower().strip()\n",
+    "\n",
+    "if user_answer == correct_answer.lower():\n",
+    "    print(\"Correct!\")\n",
+    "else:\n",
+    "    print(f\"Wrong. The correct answer is: {correct_answer}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "fc5252f5-51ca-4f18-a681-c688ed0c5a2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "What is the keyword to define a function in Python?\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Your answer:  def\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Correct!\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Ask the user a single Python trivia question\n",
+    "\n",
+    "question = \"What is the keyword to define a function in Python?\"\n",
+    "correct_answer = \"def\"\n",
+    "\n",
+    "print(question)\n",
+    "user_answer = input(\"Your answer: \").lower().strip()\n",
+    "\n",
+    "if user_answer == correct_answer.lower():\n",
+    "    print(\"Correct!\")\n",
+    "else:\n",
+    "    print(f\"Wrong. The correct answer is: {correct_answer}\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "18be0d24-c36c-4b41-b97c-b3b84b7c964c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "What is the output of 2 ** 3 in Python?\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "8 9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Wrong. The correct answer is: 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "question = \"What is the output of 2 ** 3 in Python?\"\n",
+    "correct_answer = \"8\"\n",
+    "\n",
+    "print(question)\n",
+    "user_answer = input(\"8\").lower().strip()\n",
+    "\n",
+    "if user_answer == correct_answer.lower():\n",
+    "    print(\"Correct!\")\n",
+    "else:\n",
+    "    print(f\"Wrong. The correct answer is: {correct_answer}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b576dc4c-78c4-4312-bf2e-4b7c5d8b0bd2",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
